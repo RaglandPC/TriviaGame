@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+  <!-- Background -->
+
+
+
+
+
+  <video class="video-fluid" autoplay loop>
+                    <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" class="vid" />
+                </video>
+
+
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Drink Game</h1>
+        <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script>
+    var start;
+    var gameHTML;
+    var counter = 20;
+    var questionArray = ["what is the di"];
+    var answerArray = [];
+    var correctAnswers = [];
+    var questionCounter = 0;
+    var selectAnswer;
+    var theClock;
+    var correctTally = 0;
+    var incorrectTally = 0;
+    var unansweredTally = 0;
+
+
+
+
+
+    $(document).ready(function() {
+      function initialScreen() {
+        startScreen = "<p class='text-center main-button-container'><a class='btn btn-primary btn-lg btn-block start-button' href='#' role='button'>Start Quiz</a></p>";
+        $(".mainArea").html(startScreen);
+      }
+
+
+    })
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
