@@ -18,13 +18,11 @@
 
   <!-- Background -->
 
-
-
-
-
-  <video class="video-fluid" autoplay loop>
+ <div class="video-container">
+  <video  autoplay loop>
                     <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" class="vid" />
                 </video>
+  </div>
 
 
 
@@ -34,6 +32,12 @@
       <div class="row">
         <h1 class="text-center">Drink Game</h1>
         <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <span id="start" class="button"> Start </span>
+        Counter:<div id="count">20</div>
+        Question:<div id="question"></div>
+        Answers:<div id="answers">
+        </div>
+
         </div>
       </div>
     </div>
@@ -51,7 +55,7 @@
     var gameHTML;
     var counter = 20;
     var questionArray = ["what is the di"];
-    var answerArray = [];
+    var answerArray = ["red","blue"];
     var correctAnswers = [];
     var questionCounter = 0;
     var selectAnswer;
@@ -65,10 +69,34 @@
 
 
     $(document).ready(function() {
-      function initialScreen() {
-        startScreen = "<p class='text-center main-button-container'><a class='btn btn-primary btn-lg btn-block start-button' href='#' role='button'>Start Quiz</a></p>";
-        $(".mainArea").html(startScreen);
+
+      // prints the question on the screen
+      function showQuestions(myQuestion) {
+        console.log(myQuestion);
+        $('#question').html(myQuestion);
       }
+
+      // prints an array of answers to the screen
+      function showAnswers(myAnswers) {
+        console.log(myAnswers)
+        // for each answer in the array, create a span element with the answer inside
+        // each span element needs a click action to select the answer
+
+
+      }
+      var q = questionArray[0]
+      showQuestions(q);
+
+      // once start button is clicked counter decreses by 1 unitll counter ===0
+      $("#start").on('click', function(evt){
+        setInterval(function() {
+          // decrease counter
+          counter--;
+          $("#count").html(counter)
+
+        } ,1000)
+      });
+
 
 
     })
