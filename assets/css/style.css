@@ -52,7 +52,7 @@ color: rgb(0, 0, 0);
   text-align: center;
   font-size: 35px;
   line-height: 2;
-  color: rgb(245, 182, 82);
+  color: rgb(247, 134, 0);
   font-family: 'Piedra', cursive;
 }
 .jumbotron .main-button-container {
@@ -62,5 +62,4 @@ color: rgb(0, 0, 0);
   margin-left: auto;
   margin-right: auto;
   z-index:2;
-
 }
