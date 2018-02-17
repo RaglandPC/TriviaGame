@@ -31,6 +31,7 @@ body {
 }
 
 }
+
 .jumbotron {
     margin-bottom: 0px;
     opacity: 0.2;
@@ -47,7 +48,7 @@ body {
 .jumbotron h1 {
 margin-top:0;
 text-align: center;
-color: rgb(0, 0, 0);
+color: rgb(124, 255, 23);
 }
 .jumbotron {
   position:relative;
@@ -55,7 +56,7 @@ color: rgb(0, 0, 0);
   text-align: center;
   font-size: 28px;
   line-height: 2;
-  color: rgb(247, 134, 0);
+  color: rgb(124, 255, 23);
   font-family: 'Piedra', cursive;
 }
 .jumbotron .main-button-container {
