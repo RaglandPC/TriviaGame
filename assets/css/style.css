@@ -47,25 +47,24 @@ color: rgb(0, 0, 0);
 }
 .jumbotron {
   position:relative;
-  padding-top:50px;
-  padding-bottom:50px;
+
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   line-height: 2;
   color: rgb(247, 134, 0);
   font-family: 'Piedra', cursive;
 }
 .jumbotron .main-button-container {
   position:relative;
-  margin-top: 175px;
-  max-width: 610px;
+
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   z-index:2;
 }
 
 .timer-p {
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
 .answer:hover {
@@ -73,11 +72,11 @@ color: rgb(0, 0, 0);
 }
 
 .answer {
-  padding-top: 7px;
-  height: 45px;
+
+  height: 50px;
   color: black;
-  padding-left: 14px;
-  background-color: white;
+
+  background-color: (237, 1, 29);
   border-radius: 4px;
 }
 
